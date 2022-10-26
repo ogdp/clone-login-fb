@@ -61,10 +61,11 @@
 }
 .login_r_top > form > div > input {
   border-radius: 6px;
-  padding: 14px 16px;
+  padding: 13px 16px;
   width: 100%;
   border: 1px solid #dddfe2;
   font-size: 1.1rem;
+  font-size: 16.6px;
   color: rgb(0, 0, 0,0.9);
 }
 .login_r_top > form > div > input::placeholder{
@@ -75,8 +76,39 @@
   color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 1.2rem;
-  padding: 13px 16px;
+  padding: 10.7px 16px;
 }
+.login_r_top > form > div:last-child input:hover{
+  background-color: #166fe5;
+  cursor: pointer;
+}
+/* SHOW AND HIDDEN EYE */
+/* Check value in input isset and change class*/
+input[type="password"]:placeholder-shown ~ .eye__pass-show{
+  display: none;
+}
+/* ---- */
+.login_r_top form>div:nth-child(2)>input{
+  padding-right: 52px;
+}
+.login_r_top form>div:nth-child(2){
+  position: relative;
+}
+.eye__pass-show{
+  position: absolute;
+  right: 10px;
+  top: 11px;
+}
+.eye__pass-show>div>i{
+  border-radius: 50%;
+  padding: 8px 6px;
+  font-size: .8rem;
+  cursor: pointer;
+}
+.eye__pass-show>div>i:hover{
+  background-color: #e7e7e7ce;
+}
+/* EYE END */
 .login_r_top > form > div > input:focus {
   outline: none;
   border-color: #1b74e4;
@@ -95,6 +127,9 @@
   color: #1877f2;
   font-weight: 500;
 }
+.login_r_bottom > div > a > span:hover{
+  text-decoration: underline;
+}
 .login_r_bottom > div > a > span {
   text-align: center;
 }
@@ -109,6 +144,9 @@
     margin: 0 20px;
     padding: 16px 0;
 
+}
+.sh88u span:hover{
+  background-color: #36a420;
 }
 .sh88u span{
     padding: 13px 20px;
@@ -150,7 +188,6 @@
     color: #4b4b4b;
     font-weight: 600;
 }
-.copyright,
 .langguage >li>a{
     text-decoration: none;
     color: #737373;
@@ -160,11 +197,51 @@
 
 .langguage >li:last-child>a{
     padding: 0px 10px;
-    background-color: #e8e8e9;
+    background-color: rgb(232, 232, 233, .5);
     color: #2e2e2e;
     font-size: .8rem;
     border:1px solid #c7c7c7;
 }
+.langguage >li:last-child>a:hover{
+  background-color: #ebedf0;
+}
 .bt__o--bottom{
-    padding-top: 30px;
+    padding-top: 7px;
+}
+.list__option--children{
+  margin-left: -17px;
+  margin-bottom: 10px;
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.list__option--children li{
+  list-style: none;
+  display: inline-block;
+}
+.list__option--children>li a{
+  padding-left: 18px;
+}
+.list__option--children>li>a{
+  color: #8a8d91;
+  font-size: .8rem;
+  text-decoration: none;
+  line-height: -10px;
+}
+.list__option--children>li>a:hover{
+  text-decoration: underline;
+}
+.copyright{
+  font-weight: 600;
+  text-decoration: none;
+  color: #737373;
+  font-size: .7rem;
+  font-style: inherit;
+}
+.clone_by{
+  display: none;
+  margin-top: 30px;
 }
